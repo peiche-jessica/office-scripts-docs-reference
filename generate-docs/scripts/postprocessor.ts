@@ -96,7 +96,7 @@ tryCatch(async () => {
     console.log("Writing TOC for Office Scripts");
     let versionPath = path.resolve(`${docsDestination}/excel`);
     let tocPath = versionPath + "/toc.yml";
-    let latestToc = fixToc(tocPath, "../api-extractor-inputs-excel/excel.d.ts");
+    let latestToc = fixToc(tocPath, "../api-extractor-inputs-excel/script_api_docs.d.ts");
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
 
     console.log("\nPostprocessor script complete!\n");

@@ -7,12 +7,12 @@ import yaml = require('js-yaml');
 tryCatch(async () => {
     console.log("\nStarting preprocessor script...");
 
-    const localDtsPath = "../script-inputs/excel.d.ts";
+    const localDtsPath = "../script-inputs/script_api_docs.d.ts";
 
     let dts = cleanUpDts(localDtsPath);
 
-    console.log("\ncreate file: excel.d.ts (default)");
-    fsx.writeFileSync('../api-extractor-inputs-excel/excel.d.ts', dts);
+    console.log("\ncreate file: script_api_docs.d.ts (default)");
+    fsx.writeFileSync('../api-extractor-inputs-excel/script_api_docs.d.ts', dts);
 
     // ----
     // Process Snippets

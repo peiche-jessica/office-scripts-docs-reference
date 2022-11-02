@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "excel.d.ts" ]
+  "include": [ "script_api_docs.d.ts" ]
 }
