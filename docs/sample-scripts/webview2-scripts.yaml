@@ -1,0 +1,15 @@
+'WebView2Script!WebView#postMessage:member(1)':
+- |-
+    /**
+     * Post a message to the CoreWebView2.
+     */
+    const inTopLevelFrame = (window === window.parent);
+    if (inTopLevelFrame) {
+        // The message can be any JSON serializable object.
+        window.chrome.webview.postMessage({
+            myMessage: 'Hello from the script!',
+            otherValue: 1}
+        );
+        // A simple string is an example of a JSON serializable object
+        window.chrome.webview.postMessage("example");
+    }

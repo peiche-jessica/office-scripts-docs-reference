@@ -27,7 +27,7 @@ tryCatch(async () => {
     const snippetsSourcePath = path.resolve("../../docs/sample-scripts");
     console.log("\nReading from files: " + snippetsSourcePath);
 
-    let localSnippetsString = fsx.readFileSync(`${snippetsSourcePath}/excel-scripts.yaml`).toString();
+    let localSnippetsString = fsx.readFileSync(`${snippetsSourcePath}/webview2-scripts.yaml`).toString();
 
     // Parse the YAML into an object/hash set.
     let snippets = yaml.load(localSnippetsString);
