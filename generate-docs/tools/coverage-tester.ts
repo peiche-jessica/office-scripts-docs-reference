@@ -132,7 +132,7 @@ interface ApiYaml {
 let ratingMap: Map<string, ClassCoverageRating> = new Map();
 
 // Read and evaluate each yml file.
-const docsSource = path.resolve("../../docs/docs-ref-autogen/excel/excelscript");
+const docsSource = path.resolve("../../docs/docs-ref-autogen/excel/webview2script");
 fsx.readdirSync(docsSource)
     .forEach(filename => {
         let ymlFile = jsyaml.load(fsx.readFileSync(docsSource + '/' + filename).toString()) as ApiYaml;
